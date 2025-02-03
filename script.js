@@ -11,3 +11,7 @@ function beforesubmit() {
     // set the formatted for output date
     outputdate.value = formattedDate;
 }
+
+/*
+    Repository Website Link: https://a2k-amit.github.io/Web-To-Lead-Dynamic-Form/ 
+*/
