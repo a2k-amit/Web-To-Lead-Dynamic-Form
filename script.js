@@ -17,7 +17,7 @@ if (captchachecked) {
     }
 } else {
     alert('Please Check The reCAPTCHA box to submit the Lead');
-    event.preventDefault();
+    event.preventDefault(); // It will prevent the form being submitted if the recaptcha is not populated
 }
 
 function captchasuccess() {
