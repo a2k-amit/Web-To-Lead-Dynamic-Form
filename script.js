@@ -2,9 +2,9 @@ console.log('Dynamic Web To Lead Form - Mini Project:');
 
 let captchachecked = false;
 
-if (captchachecked) {
-    
-    function beforesubmit(event) {
+function beforesubmit(event) {
+    if (captchachecked) {    
+ 
         let outputdate = document.querySelector('.outputdate');
         let inputdate = document.querySelector('.inputdate');
     
@@ -14,10 +14,10 @@ if (captchachecked) {
     
         // set the formatted for output date
         outputdate.value = formattedDate;
+    } else {
+        alert('Please Check The reCAPTCHA box to submit the Lead');
+        event.preventDefault(); // It will prevent the form being submitted if the recaptcha is not populated
     }
-} else {
-    alert('Please Check The reCAPTCHA box to submit the Lead');
-    event.preventDefault(); // It will prevent the form being submitted if the recaptcha is not populated
 }
 
 function captchasuccess() {
