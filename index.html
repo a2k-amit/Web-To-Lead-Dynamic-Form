@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebToLeadFrom</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <h1>Create Lead</h1><br>
@@ -15,6 +16,7 @@
     <!-- <input type=hidden name="retURL" value="https://trailhead.salesforce.com/"> -->
     <input type=hidden name="retURL" value="https://a2k-amit.github.io/Web-To-Lead-Dynamic-Form/thankyou.html">
     <input type=hidden name="Lead_Date__c" class="outputdate">
+    <input type=hidden name='captcha_settings' value='{"keyname":"MyWebToLeadForm","fallback":"true","orgId":"00DNS000001KAAl","ts":""}'>
     
     <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true" /><br>
     
@@ -30,6 +32,7 @@
     <label for="email"> Lead Date</label>
     <input type="date" required="true" class="inputdate">
     <input type="submit" name="submit" class="submit">
+    <div class="g-recaptcha" data-sitekey="6LfAB8wqAAAAAJTldOpAIMdAgOO7YozUFGDapQbS"></div><br>
     
     </form>
     <script src="script.js"></script>
